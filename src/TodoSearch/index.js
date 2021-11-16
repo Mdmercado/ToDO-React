@@ -3,14 +3,13 @@ import "./TodoSearch.css";
 
 function TodoSearch({ searchValue, setSearchValue }) {
   const OnsearchValueChange = (e) => {
-    console.log(e.target.value);
     setSearchValue(e.target.value);
   };
 
   return [
     <input
       className="TodoSearch"
-      placeholder="Manzana"
+      placeholder="Buscar: Ir al Gimnasio"
       value={searchValue}
       onChange={OnsearchValueChange}
     />,
