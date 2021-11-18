@@ -10,7 +10,12 @@ function TodoProvider(props) {
     loading,
     error,
   } = useLocalStorage("TODOS_V1", []);
+
+  // estado para buscar tareas
   const [searchValue, setSearchValue] = React.useState("");
+
+  // creo un estado para abrir o cerrar mi ventana modal.
+  const [openModal, setOpenModal] = React.useState(false);
 
   const completedTodos = todos.filter((todo) => !!todo.completed).length;
   const totalTodos = todos.length;
@@ -26,6 +31,15 @@ function TodoProvider(props) {
       return todoText.includes(searchText);
     });
   }
+
+  const addTodo = (text) => {
+    const newTodos = [...todos];
+    newTodos.push({
+      completed: false,
+      text,
+    });
+    saveTodos(newTodos);
+  };
 
   const completeTodo = (text) => {
     const todoIndex = todos.findIndex((todo) => todo.text === text);
@@ -48,11 +62,14 @@ function TodoProvider(props) {
         error,
         totalTodos,
         completedTodos,
+        searchedTodos,
         searchValue,
         setSearchValue,
-        searchedTodos,
+        addTodo,
         completeTodo,
         deleteTodo,
+        openModal,
+        setOpenModal,
       }}
     >
       {props.children}

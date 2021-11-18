@@ -1,9 +1,15 @@
 import React from "react";
 import "./CreateTodoButton.css";
 
-function CreateTodoButton() {
-  const ClickButton = (msg) => {
-    alert(msg);
+function CreateTodoButton(props) {
+  const onClickButton = () => {
+    if (!props.openModal === true) {
+      props.setOpenModal(true);
+    } else {
+      props.setOpenModal(false);
+    }
+    // Otra forma
+    // props.setOpenModal((prevState) => !prevState);
   };
   return (
     // react interpreta las llaves vacias como un Fragment
@@ -11,7 +17,7 @@ function CreateTodoButton() {
       <button
         className="CreateTodoButton"
         type="submit"
-        onClick={() => ClickButton("Se abre modal")}
+        onClick={onClickButton}
       >
         +
       </button>
