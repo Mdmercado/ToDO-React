@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/ToDO-React/static/css/main.77042345.chunk.css",
+    "main.js": "/ToDO-React/static/js/main.b5845ca3.chunk.js",
+    "main.js.map": "/ToDO-React/static/js/main.b5845ca3.chunk.js.map",
+    "runtime-main.js": "/ToDO-React/static/js/runtime-main.82b202bb.js",
+    "runtime-main.js.map": "/ToDO-React/static/js/runtime-main.82b202bb.js.map",
+    "static/js/2.72369824.chunk.js": "/ToDO-React/static/js/2.72369824.chunk.js",
+    "static/js/2.72369824.chunk.js.map": "/ToDO-React/static/js/2.72369824.chunk.js.map",
+    "index.html": "/ToDO-React/index.html",
+    "static/css/main.77042345.chunk.css.map": "/ToDO-React/static/css/main.77042345.chunk.css.map",
+    "static/js/2.72369824.chunk.js.LICENSE.txt": "/ToDO-React/static/js/2.72369824.chunk.js.LICENSE.txt",
+    "static/media/check.76cf8bea.svg": "/ToDO-React/static/media/check.76cf8bea.svg",
+    "static/media/delete.4793d779.svg": "/ToDO-React/static/media/delete.4793d779.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.82b202bb.js",
+    "static/js/2.72369824.chunk.js",
+    "static/css/main.77042345.chunk.css",
+    "static/js/main.b5845ca3.chunk.js"
+  ]
+}
